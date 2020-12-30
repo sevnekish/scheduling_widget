@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://test-portal-api/cpt-codes?filter%5BclinicianId%5D=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      Api-Version:
+      - '2019-01-17'
+      Application-Build-Version:
+      - 0.0.0
+      Application-Platform:
+      - web
+      User-Agent:
+      - Faraday v1.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 30 Dec 2020 02:56:50 GMT
+      Content-Type:
+      - application/vnd.api+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 400 Bad Request
+      Cache-Control:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ec690eaa-44f5-40a8-b2d1-55af33aa431d
+      X-Download-Options:
+      - noopen
+      X-Runtime:
+      - '0.004023'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"title":"param is missing or the value is empty: filter","code":"400","status":"400"}]}'
+  recorded_at: Wed, 30 Dec 2020 02:56:50 GMT
+recorded_with: VCR 6.0.0

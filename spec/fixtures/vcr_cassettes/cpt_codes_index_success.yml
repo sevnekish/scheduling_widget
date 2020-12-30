@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://test-portal-api/cpt-codes?filter%5BclinicianId%5D=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      Api-Version:
+      - '2019-01-17'
+      Application-Build-Version:
+      - 0.0.0
+      Application-Platform:
+      - web
+      User-Agent:
+      - Faraday v1.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Dec 2020 02:53:04 GMT
+      Content-Type:
+      - application/vnd.api+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 6d5a4b01-e215-4ed5-b2d4-76e5b457aec7
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"79bf2858fe573d54a16ad1407a99fd8d"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.013541'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"6","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/6"},"attributes":{"description":"Group
+        Therapy","duration":50,"rate":"300.0","callToBook":"false"}}],"links":{"first":"https://test-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10","last":"https://test-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10"}}'
+  recorded_at: Wed, 30 Dec 2020 02:53:04 GMT
+recorded_with: VCR 6.0.0

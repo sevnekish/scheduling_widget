@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://test-portal-api/offices?filter%5BclinicianId%5D=4&filter%5BcptCodeId%5D=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      Api-Version:
+      - '2019-01-17'
+      Application-Build-Version:
+      - 0.0.0
+      Application-Platform:
+      - web
+      User-Agent:
+      - Faraday v1.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 30 Dec 2020 02:59:18 GMT
+      Content-Type:
+      - application/vnd.api+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 400 Bad Request
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 12b66a0d-a451-425c-8c7e-a4ad9191f25a
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"c36306dccb152633f614b73725ac7c1f"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.015524'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"title":"param is missing or the value is empty: filter","code":"400","status":"400"}]}'
+  recorded_at: Wed, 30 Dec 2020 02:59:18 GMT
+recorded_with: VCR 6.0.0
