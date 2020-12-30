@@ -1,0 +1,9 @@
+{
+   "errors":[
+      {
+         "title":"param is missing or the value is empty: filter",
+         "code":"400",
+         "status":"400"
+      }
+   ]
+}

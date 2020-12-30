@@ -1,0 +1,21 @@
+{
+   "data":[
+      {
+         "id":"6",
+         "type":"cptCodes",
+         "links":{
+            "self":"https://test-portal-api/cpt-codes/6"
+         },
+         "attributes":{
+            "description":"Group Therapy",
+            "duration":50,
+            "rate":"300.0",
+            "callToBook":"false"
+         }
+      }
+   ],
+   "links":{
+      "first":"https://test-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10",
+      "last":"https://test-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10"
+   }
+}

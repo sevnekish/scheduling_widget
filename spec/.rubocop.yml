@@ -1,0 +1,62 @@
+inherit_from:
+  - ../.rubocop.yml
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/MultilineBlockLayout:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+
+RSpec/EmptyLineAfterSubject:
+  Exclude:
+    - 'factories/**/*'
+
+RSpec/EmptyLineAfterHook:
+  Exclude:
+    - 'factories/**/*'
+    - 'support/**/*'
+
+Style/BlockDelimiters:
+  IgnoredMethods:
+    - expect
+
+RSpec/HookArgument:
+  Exclude:
+    - 'support/**/*'
+
+Layout/LineLength:
+  Exclude:
+    - 'factories/**/*'
+
+RSpec/NestedGroups:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+RSpec/ExpectChange:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
